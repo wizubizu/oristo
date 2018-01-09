@@ -8,7 +8,7 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Oristo Universal</title>
-	
+	<link rel="icon" type="image/jpg" href="assets/img/logo.jpg">
 
 	<!-- STYLESHEETS-->
 	<link rel="stylesheet" type="text/css" href="libraries/bootstrap/css/bootstrap.min.css">
@@ -396,17 +396,25 @@
 			<h2 class="w-600 f21">Gallery</h2>
 			<div class="row">
 				<div class="col-md-3 col-sm-6">
-					<img src="assets/img/images-25.jpeg" class="width-260 h-260 hvr-grow">
+					<a class="thumbnail no-bd" href="#" data-image-id="" data-toggle="modal" data-title="This is my title" data-image="assets/img/images-25.jpeg" data-target="#image-gallery">
+		                <img class="img-responsive width-260 h-260" src="assets/img/images-25.jpeg" alt="Short alt text">
+		            </a>
 				</div>
 				<div class="col-md-3 col-sm-6 mm-t-10">
-					<img src="assets/img/images-24.jpeg" class="width-260 h-260 hvr-grow">
+					<a class="thumbnail no-bd" href="#" data-image-id="" data-toggle="modal" data-title="This is my title" data-image="assets/img/images-24.jpeg" data-target="#image-gallery">
+		                <img class="img-responsive width-260 h-260" src="assets/img/images-24.jpeg" alt="Short alt text">
+		            </a>
 				</div>
 				<div class="col-md-3 col-sm-6 mm-t-10">
-					<img src="assets/img/images-12.jpeg" class="width-260 h-260 hvr-grow">
+					<a class="thumbnail no-bd" href="#" data-image-id="" data-toggle="modal" data-title="This is my title" data-image="assets/img/images-12.jpeg" data-target="#image-gallery">
+		                <img class="img-responsive width-260 h-260" src="assets/img/images-12.jpeg" alt="Short alt text">
+		            </a>
 				</div>
 
 				<div class="col-md-3 col-sm-6 mm-t-10">
-					<img src="assets/img/images-14.jpeg" class="width-260 h-260 hvr-grow">
+					<a class="thumbnail no-bd" href="#" data-image-id="" data-toggle="modal" data-title="This is my title" data-image="assets/img/images-14.jpeg" data-target="#image-gallery">
+		                <img class="img-responsive width-260 h-260" src="assets/img/images-14.jpeg" alt="Short alt text">
+		            </a>
 				</div>
 				<div class="row">
 					<div class="col-md-4"></div>
@@ -418,9 +426,44 @@
 			</div>
 		</div>
 
+
+		<!-- Gallery modal -->
+		<div class="modal fade" id="image-gallery" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		    <div class="modal-dialog">
+		        <div class="modal-content">
+		            <div class="modal-header no-bd">
+		                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+		                <h4 class="modal-title text-center" id="image-gallery-title"></h4>
+		            </div>
+		            <div class="modal-body">
+		                <div class="row">
+		                	<div class="col-md-1 col-sm-1"></div>
+		                	<div class="col-md-10 col-sm-10">
+		                		<img id="image-gallery-image" class="img-responsive width-470 h-430 mh-auto" src="">
+		                	</div>
+		                	<div class="col-md-1 col-sm-1"></div>
+		                </div>
+		            </div>
+		            <div class="modal-footer no-bd">
+
+		                <div class="col-md-2 col-xs-6">
+		                    <button class="btn bg-browno bd-4 c-white f4 m-t-5p m-b-5p width-70 mwidth-100p twidth-100p" id="show-previous-image">Previous</button>
+		                </div>
+
+		                <div class="col-md-8"></div>
+
+		                <div class="col-md-2 col-xs-6">
+		                    <button id="show-next-image" class="btn bg-browno bd-4 c-white f4 m-t-5p m-b-5p width-70 mwidth-100p twidth-100p">Next</button>
+		                </div>
+		            </div>
+		        </div>
+		    </div>
+		</div>
+		<!-- end -->
+
 		<div class="bg-grey99  m-t-5p">
 			<div class="container">
-				<h2 class="w-600 f21">Our Supports</h2>
+				<h2 class="w-600 f21">Our Subsidiaries</h2>
 				<div class="row">
 					
 					<div class="col-md-3 col-sm-6">
@@ -458,6 +501,9 @@
 			</div>
 		</div>
 	</section>
+
+
+	
 
 	<footer class="bg-grey99">
 		<div class=" m-t-5p">
@@ -542,7 +588,7 @@
 		$(document).ready(function(){
 		  $(window).scroll(function(){
 		  	var scroll = $(window).scrollTop();
-			  if (scroll > 100) {
+			  if (scroll > 150) {
 			    $(".change").css("background" , "#fffffff2");
 			    $(".change").css("color" , "black");
 			  }
@@ -567,18 +613,78 @@
 		      $('#custom_carousel .controls li.active').removeClass('active');
 		      $('#custom_carousel .controls li:eq('+$(evt.relatedTarget).index()+')').addClass('active');
 		    })
-		    $('.nav').draggable({ 
-		        axis: "x",
-		         stop: function() {
-		            var ml = parseInt($(this).css('left'));
-		            if(ml>0)
-		            $(this).animate({left:"0px"});
-		                if(ml<leftRight)
-		                    $(this).animate({left:leftRight+"px"});
+		    // $('.nav').draggable({ 
+		    //     axis: "x",
+		    //      stop: function() {
+		    //         var ml = parseInt($(this).css('left'));
+		    //         if(ml>0)
+		    //         $(this).animate({left:"0px"});
+		    //             if(ml<leftRight)
+		    //                 $(this).animate({left:leftRight+"px"});
 		                    
-		        }
+		    //     }
 		      
-		    });
+		    // });
+		});
+
+
+		// gallery modal 
+
+		$(document).ready(function(){
+
+		    loadGallery(true, 'a.thumbnail');
+
+		    //This function disables buttons when needed
+		    function disableButtons(counter_max, counter_current){
+		        $('#show-previous-image, #show-next-image').show();
+		        if(counter_max == counter_current){
+		            $('#show-next-image').hide();
+		        } else if (counter_current == 1){
+		            $('#show-previous-image').hide();
+		        }
+		    }
+
+		    /**
+		     *
+		     * @param setIDs        Sets IDs when DOM is loaded. If using a PHP counter, set to false.
+		     * @param setClickAttr  Sets the attribute for the click handler.
+		     */
+
+		    function loadGallery(setIDs, setClickAttr){
+		        var current_image,
+		            selector,
+		            counter = 0;
+
+		        $('#show-next-image, #show-previous-image').click(function(){
+		            if($(this).attr('id') == 'show-previous-image'){
+		                current_image--;
+		            } else {
+		                current_image++;
+		            }
+
+		            selector = $('[data-image-id="' + current_image + '"]');
+		            updateGallery(selector);
+		        });
+
+		        function updateGallery(selector) {
+		            var $sel = selector;
+		            current_image = $sel.data('image-id');
+		            $('#image-gallery-caption').text($sel.data('caption'));
+		            $('#image-gallery-title').text($sel.data('title'));
+		            $('#image-gallery-image').attr('src', $sel.data('image'));
+		            disableButtons(counter, $sel.data('image-id'));
+		        }
+
+		        if(setIDs == true){
+		            $('[data-image-id]').each(function(){
+		                counter++;
+		                $(this).attr('data-image-id',counter);
+		            });
+		        }
+		        $(setClickAttr).on('click',function(){
+		            updateGallery($(this));
+		        });
+		    }
 		});
     </script>
 </html>
