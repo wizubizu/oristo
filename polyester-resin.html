@@ -17,7 +17,7 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/main.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/index.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/checkbox.css">
-	
+	<link rel="stylesheet" type="text/css" href="assets/css/style4.css">
 
 
 	<!-- WEBFONT -->
@@ -28,6 +28,14 @@
 </head>
 <body class="">
 
+	<ul class="cb-slideshow">
+        <li class="li"><span>Image 01</span></li>
+        <li class="li"><span>Image 02</span></li>
+        <li class="li"><span>Image 03</span></li>
+        <li class="li"><span>Image 04</span></li>
+        <li class="li"><span>Image 05</span></li>
+        <li class="li"><span>Image 06</span></li>
+    </ul>
 
 	<header>
 		<nav class="navbar change navbar-fixed-top p-b-35" role="navigation">
@@ -64,7 +72,7 @@
 			<div class="row">
 				<div class="col-md-2"></div>
 				<div class="col-md-8">
-					<div class="bg-grey99 p-b-5p">
+					<div class="bg-liter bs bd-4 p-b-5p">
 						<img src="assets/img/product/polyester.jpeg" class="width-748 mwidth-100p h-350 mh-auto twidth-100p">
 						<p class="w-900 f-30 mf-25 p-l-5p p-r-5p p-t-5p c-browno">POLYESTER-RESIN</p>
 						<p class="p-l-5p p-r-5p p-t-5 l-h1 f-16 j-ta">Polyester resin are unsaturated synthetic resins formed by the reaction of di-basic organic acids and polyhydric alcohols. They are used in sheets moulding and bulk casting. Wall panels fabricated from polyester resins are reinforced with fibre glass mats. This are mostly used in restaurants, kitchens, restrooms, extensive bathrooms and tubs.  Polyester resin comes in different types and every batch could be factory produced depending on the nature of application or industrial work.</p>
@@ -105,7 +113,7 @@
 		</div>
 	</section>
 
-	<footer class="bg-grey99">
+	<footer class="bg-liter">
 		<div class=" m-t-5p">
 			<div class=" container mc-ta">
 				<h2 class="w-600 f21">Contact</h2>
@@ -123,7 +131,7 @@
 						<div id="googleMap" style="height:400px;width:100%;"></div>
 						<script>
 						function myMap() {
-						var myCenter = new google.maps.LatLng(6.6011, 3.3566);
+						var myCenter = new google.maps.LatLng(6.601709, 3.343782);
 						var mapProp = {center:myCenter, zoom:12, scrollwheel:false, draggable:false, mapTypeId:google.maps.MapTypeId.ROADMAP};
 						var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
 						var marker = new google.maps.Marker({position:myCenter});
@@ -181,7 +189,8 @@
 	<script type="text/javascript" src="libraries/bootstrap/js/jquery-3.1.1.min.js"></script>
 
     <script src="libraries/bootstrap/js/bootstrap.min.js"></script>
-    </script>
+    <!-- background sliding -->
+    <script type="text/javascript" src="libraries/bootstrap/js/modernizr.custom.86080.js"></script>
 </body>
 	
     <script type="text/javascript">
@@ -197,7 +206,7 @@
 
 			  else{
 				  $(".change").css("background" , "transparent");
-				  // $(".change").css("color" , "white");  	
+				  $(".change").css("color" , "white");  	
 			  }
 		  })
 		});

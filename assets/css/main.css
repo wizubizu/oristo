@@ -7,8 +7,8 @@ html {
 }
 
 body {
-	/*font-family: 'Raleway', sans-serif;*/
-	font-family: 'Gilroy-Light';
+	font-family: 'century-gothic' ,'Raleway', sans-serif;
+	/*font-family: 'Gilroy-Light';*/
 	font-size: 14px;
 	color: #222222;
 	font-weight: normal;
@@ -492,6 +492,7 @@ select:focus {
 .width-80 {width:80px !important;}
 .width-90 {width:90px !important;}
 .width-100 {width:100px !important;}
+.width-108 {width:108px !important;}
 .width-110 {width:110px !important;}
 .width-114 {width:114px !important;}
 .width-115 {width:115px !important;}
@@ -619,6 +620,8 @@ select:focus {
     border-radius: 0;
     border: 1px solid #fff;
 }
+.bg-liter{ background:rgba(255,255,255,.88) !important; background-color:rgba(255,255,255,.88) ; }
+.bg-liter1{ background:#fffffff2 !important; background-color:#fffffff2 ; }
 .bg-trans{ background:transparent !important; background-color:transparent ; }
 .bg-white{ background:#FFFFFF !important; background-color:#FFFFFF; }
 .bg-orange{ background:#FC7B08 !important; background-color:#FC7B08; }

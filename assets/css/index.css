@@ -1,60 +1,47 @@
-/*amplify*/
+/*orista*/
 @font-face{
-	font-family: 'Gilroy-Light';
-	src: url('../../Gilroy-FREE/Gilroy-Light.otf');
+	font-family: 'century-gothic';
+	src: url('../../fonts/century-gothic.ttf');
 }
 
-.f4{
-	font-family: "Gilroy-Light";
-}
-
-
 @font-face{
-	font-family: 'Oswald-Regular';
-	src: url('../../oswald/Oswald-Regular.ttf');
+	font-family: 'FallingSky';
+	src: url('../../fonts/FallingSky.otf');
 }
 @font-face{
-	font-family: 'Oswald-Medium';
-	src: url('../../oswald/Oswald-Medium.ttf');
+	font-family: 'Tahoma Regular';
+	src: url('../../fonts/Tahoma Regular.ttf');
 }
 @font-face{
-	font-family: 'Oswald-Bold';
-	src: url('../../oswald/Oswald-Bold.ttf');
-}
-@font-face{
-	font-family: 'Rajdhani-Regular';
-	src: url('../../rajdhani/Rajdhani-Regular.ttf');
-}
-@font-face{
-	font-family: 'Rajdhani-Medium';
-	src: url('../../rajdhani/Rajdhani-Medium.ttf');
-}
-@font-face{
-	font-family: 'Rajdhani-Bold';
-	src: url('../../rajdhani/Rajdhani-Bold.ttf');
+	font-family: 'Times Regular';
+	src: url('../../fonts/Times Regular.ttf');
 }
 
 .f1{
-	font-family: "Oswald-Regular";
+    font-family: "century-gothic";
 }
+
 .f2{
-	font-family: "Oswald-Medium";
+    font-family: "FallingSky";
 }
+
 .f3{
-	font-family: "Oswald-Bold";
+    font-family: "Tahoma Regular";
 }
-.f2{
-	font-family: "Rajdhani-Regular";
-}
-.f21{
-	font-family: "Rajdhani-Medium";
-}
-.f22{
-	font-family: "Rajdhani-Bold";
+
+.f4{
+    font-family: "Times Regular";
 }
 
 
-/*amplify*/
+.bg-browno:hover {
+    color: #333 !important;
+    background-color: rgba(255,255,255,.88) !important;
+    border-color: #adadad;
+}
+
+
+/*orista*/
 	.bg-1{
 	background-color: #FCFCFC !important;
 	 clip-path: polygon(0 0, 1600px 0, 1600px -37%, 0 100%);
@@ -354,6 +341,10 @@
 /*end*/
 
 
+
+
+
+
 .clearfix{
 	clear: all;
 }
@@ -444,12 +435,13 @@
 }
 
 .pagination a {
-    color: black;
+    /*color: black;*/
+    color: white;
     float: left;
     padding: 8px 16px;
     text-decoration: none;
     border-radius: 50%;
-    border: 1px solid grey;
+    border: 1px solid white;
 }
 
 .pagination a.active {
@@ -477,7 +469,7 @@
 
     color:#000;
     background-color:#fff;
-    padding:20px 0;
+    /*padding:20px 0;*/
     overflow:hidden
 }
 #custom_carousel .item img{
@@ -584,16 +576,47 @@ height:auto
     /*clip-path: polygon(0 0, 1600px 0, 1600px 87%, 0 100%);*/
 }
 .bg-head4{
-	background-image: url(../img/capture4.png);
+	background-image: url(../img/765about.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
 .bg-head41{
-	background-image: url(../img/capture41.png);
+  background: linear-gradient(100deg, rgba(215, 221, 232, 0.6) 50%, rgba(215, 221, 232, 0.6) 50%),url(../img/765about.jpg);
+	/*background-image: url(../img/capture41.png);*/
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+.bg-head42{
+
+  background-image: url(../img/765about.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-blend-mode: normal;
+    animation-fill-mode: forwards;
+    /*animation-name: banner;*/
+    animation-duration: 12s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+
+
+.banneranimation {
+    -webkit-animation-name: banner;
+    -webkit-animation-duration: 12s;
+    -webkit-animation-timing-function: ease-in-out;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    animation-name: banner;
+    animation-duration: 12s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
 }
 
 .bg-head1{
@@ -928,6 +951,7 @@ height:auto
 	.mm-t-12p{margin-top:12% !important; }
 	.mm-t-17p{margin-top:17% !important; }
     .mm-t-20p{margin-top:20% !important; }
+    .mm-t-30p{margin-top:30% !important; }
 	.mm-t-100p{margin-top:100% !important; }
 
 
@@ -952,7 +976,8 @@ height:auto
 
 
 	.mwidth-0 {width:0 !important;}
-	.mwidth-40 {width:40px !important;}
+    .mwidth-40 {width:40px !important;}
+	.mwidth-80 {width:80px !important;}
 	.mwidth-104 {width:104px !important;}
 	.mwidth-127 {width:127px !important;}
 	.mwidth-140 {width:140px !important;}
