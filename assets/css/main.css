@@ -523,6 +523,7 @@ select:focus {
 .width-350 {width:350px !important;}
 .width-360 {width:360px !important;}
 .width-370 {width:370px !important;}
+.width-384 {width:384px !important;}
 .width-395 {width:395px !important;}
 .width-400 {width:400px !important;}
 .width-410 {width:410px !important;}
@@ -743,6 +744,7 @@ select:focus {
 .h-300 { height:300px !important; }
 .h-350 { height:350px !important; }
 .h-360 { height:360px !important; }
+.h-384 { height:384px !important; }
 .h-430 { height:430px !important; }
 .h-434 { height:434px !important; }
 .h-450 { height:450px !important; }

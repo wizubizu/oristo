@@ -474,8 +474,8 @@
 }
 #custom_carousel .item img{
 width:100%;
-/*height:auto*/
-height:283px;
+height:auto
+/*height:283px;*/
 }
 
 #custom_carousel .izq 
