@@ -40,6 +40,9 @@
     border-color: #adadad;
 }
 
+li:hover{color:#BF6000 !important }
+
+
 
 
 /*orista*/
@@ -1200,6 +1203,8 @@ height:auto
 
 
 
+    .mp-0 {padding:0px !important;}
+    .mp-10 {padding:10px !important;}
 	.mp-20 {padding:20px !important;}
 
 
