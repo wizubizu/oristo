@@ -41,6 +41,7 @@
 }
 
 
+
 /*orista*/
 	.bg-1{
 	background-color: #FCFCFC !important;
@@ -58,6 +59,39 @@
 	}
 
     .p1{background-image: url(../img/box1.jpg);}
+
+
+    /*dropdown hover*/
+.show-on-hover:hover > ul.dropdown-menu {
+    display: block;    
+}
+
+.l-_42{
+    left: -32px !important;
+    margin-top: 3px !important;
+}
+
+.dropdown ul.dropdown-menu:before {
+    content: "";
+    border-bottom: 10px solid #fff;
+    border-right: 10px solid transparent;
+    border-left: 10px solid transparent;
+    position: absolute;
+    top: -7px;
+    left: 69px;
+    z-index: 10;
+}
+.dropdown ul.dropdown-menu:after {
+    content: "";
+    border-bottom: 12px solid #ccc;
+    border-right: 12px solid transparent;
+    border-left: 12px solid transparent;
+    position: absolute;
+    top: -9px;
+    left: 67px;
+    z-index: 9;
+}
+/*end*/
 
     /*scroll*/
     #myBtn {
@@ -253,16 +287,16 @@
       background-repeat: no-repeat;
     }
     .fade-carousel .slides .slide-1 {
-      background-image: url(../img/banner/bannezoris.jpg); 
+      background-image: url(../img/banner/banner8.jpg); 
     }
     .fade-carousel .slides .slide-2 {
-      background-image: url(../img/banner/banner2.jpg);
+      background-image: url(../img/banner/banner8.jpg);
     }
     .fade-carousel .slides .slide-3 {
-      background-image: url(../img/banner/banner5.jpg);
+      background-image: url(../img/banner/banner8.jpg);
     }
     .fade-carousel .slides .slide-4 {
-      background-image: url(../img/banner/banner4.jpg);
+      background-image: url(../img/banner/banner8.jpg);
     }
 
     /********************************/
@@ -654,7 +688,7 @@ height:auto
     width: 30px;
     height: 30px;
     color: #FFF;
-    background-color: #BF0603;
+    background-color: #BF6000;
     font-size: 20px;
     text-align:center;
     padding-top: 10px;

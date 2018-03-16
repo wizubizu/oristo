@@ -57,10 +57,22 @@
 				<div class="collapse navbar-collapse navbar-ex1-collapse">
 					
 					<ul class="nav navbar-nav navbar-right p-t-5">
-						<li class="f1"><a class="mc-white" href="about.html">ABOUT</a></li>
-						<li class="f1"><a class="mc-white" href="product.html">PRODUCTS</a></li>
-						<li class="f1"><a class="mc-white" href="service.html">SERVICES</a></li>
-						<li class="f1"><a class="mc-white" href="gallery.html">GALLERY</a></li>
+						<ul class="nav navbar-nav navbar-right p-t-5 ul">
+							<li class="f1 m-r-10">
+								<a href="about.html" class="btn bg-browno bd-4 c-white p-t-10 p-b-10">ABOUT</a>
+							</li>
+							<li class="f1 m-r-10"><a class="btn bg-liter bd-4 p-t-10 p-b-10" href="product.html">PRODUCTS</a></li>
+							<li class="f1 m-r-10 dropdown show-on-hover">
+								<a href="#" class="btn bg-browno bd-4 c-white p-t-10 p-b-10" data-toggle="dropdown">SERVICES</a>
+								<ul class="dropdown-menu l-_42">
+									<li><a href="service1.html" class=""> SERVICE1 </a></li>
+									<li><a href="service2.html" class="">SERVICE2</a></li>
+									<li><a href="service3.html" class="">SERVICE3</a></li>
+								</ul>
+							</li>
+							<li class="f1 m-r-10"><a class="btn bg-browno bd-4 c-white p-t-10 p-b-10" href="gallery.html">GALLERY</a></li>
+							<li class="f1 m-r-10"><a class="btn bg-browno bd-4 c-white p-t-10 p-b-10" href="contact.html">CONTACT</a></li>
+						</ul>
 					</ul>
 				</div><!-- /.navbar-collapse -->
 			</div>
@@ -101,71 +113,8 @@
 	</section>
 
 	<footer class="bg-liter">
-		<div class=" m-t-5p">
-			<div class=" container mc-ta">
-				<h2 class="w-600 f21">Contact</h2>
-				<div class="row">
-					<div class="col-md-6 col-sm-6">
-
-						<div>
-							<p>Contact us and we'll get back to you within 24 hours.</p>
-	      					<p><span class="glyphicon glyphicon-map-marker"></span> 93 Obafemi Awolowo Way Ikeja Lagos</p>
-	      					<p><span class="glyphicon glyphicon-phone"></span> +234 7081749675</p>
-	      					<p><span class="glyphicon glyphicon-envelope"></span> OristoUniversal@gmail.com</p>
-						</div>
-
-						<!-- Add Google Maps -->
-						<div id="googleMap" style="height:400px;width:100%;"></div>
-						<script>
-						function myMap() {
-						var myCenter = new google.maps.LatLng(6.601709, 3.343782);
-						var mapProp = {center:myCenter, zoom:12, scrollwheel:false, draggable:false, mapTypeId:google.maps.MapTypeId.ROADMAP};
-						var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
-						var marker = new google.maps.Marker({position:myCenter});
-						marker.setMap(map);
-						}
-						</script>
-						<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB63Rxydh3k1S6TOUsOH11cF4OmVyMf27A&callback=myMap"></script>
-						<!--
-						To use this code on your website, get a free API key from Google.
-						Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
-						-->
-					</div>
-					<div class="col-md-6 col-sm-6 mm-t-5p tm-t-5p">
-						<!-- <div class="mp-l-0 social">
-							<a class="m-r-10" href="#"><i class="fa fa-lg fa-facebook"></i></a>
-							<a href="#"><i class="fa fa-lg fa-twitter"></i></a>
-						</div> -->
-
-						<form action="" method="POST" role="form">
-							<div class="form-group">
-								<label for="">Full Name</label>
-								<input type="text" class="form-control" id="" placeholder="" required="">
-							</div>
-							<div class="form-group">
-								<label for="">Email</label>
-								<input type="email" class="form-control" id="" placeholder="" required="">
-							</div>
-							<div class="form-group">
-								<label for="">Phone Number</label>
-								<input type="text" class="form-control" id="" placeholder="" required="">
-							</div>
-							<div class="form-group">
-								<label for="">Mesaage</label>
-								<textarea name="" id="input" class="form-control" rows="10" required=""></textarea>
-							</div>
-
-
-						
-							
-						
-							<button type="submit" class="btn bg-browno bd-4 c-white f4 m-t-5p m-b-5p width-150">Submit</button>
-						</form>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="container">
+		
+		<div class="container m-t-5p">
 			<p class="text-center"> &copy;Copyright 2012&nbsp;  &bull;All Right Reserved&nbsp;  &bull;Oristo Universal Company&nbsp; &reg; 93 Obafemi Awolowo Way Ikeja Lagos 100001&nbsp; &bull; P.O. Box 2870</p>
 		</div>
 	</footer>
@@ -193,7 +142,7 @@
 
 			  else{
 				  $(".change").css("background" , "transparent");
-				  $(".change").css("color" , "white");  	
+				  $(".change").css("color" , "black");  	
 			  }
 		  })
 		});
