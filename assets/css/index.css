@@ -978,7 +978,7 @@ height:auto
 
     .l-_42 {
     left: 58px !important;}
-  }
+  
 
 		/*overlay*/
 		.mbg-overlay {
@@ -1280,7 +1280,7 @@ height:auto
 
 	.navbar-nav {
     /*color: white;*/
-    background: black;
+    background: transparent;
 	}
 
 	
