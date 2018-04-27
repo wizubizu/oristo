@@ -975,6 +975,11 @@ height:auto
 
 	@media screen and (max-width: 560px){
 
+
+    .l-_42 {
+    left: 58px !important;}
+  }
+
 		/*overlay*/
 		.mbg-overlay {
 	    width: 100%;
